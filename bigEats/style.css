@@ -1,25 +1,31 @@
-.title {
-position: fixed;
-display: inline-block;
-align-content: center;
-z-index: 500;
-top: 0;
-width: 100%;
-border-radius: 20px;
-text-align: center;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 70px;
-font-style: oblique;
-margin-left: auto;
-margin-right: auto;
-margin-top: 10px;
-margin-bottom: 10px;
-background-color: white; /* */
-
+.titleContainer {
+    display: flexbox;
+    position: relative;
+    justify-content:center;
+    margin: auto;
+    margin-top: 25px;
 }
 
+.titleText {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    font-style: oblique;
+    z-index: 500;
+    align-content: centre;
+}
+
+.titleIcon{
+    z-index: 1000;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+
 .mainContent {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -73,9 +79,7 @@ background-color: white; /* */
 
 
 
-.title:hover{
-    background: black;
-    color: white;
+.titleText:hover{
     transition: font-size 10s;
-    font-size: 80px;
+    font-size: 90px;
 }
