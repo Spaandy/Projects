@@ -1,9 +1,12 @@
 .titleContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 25px;
 }
+
+
 
 .titleContainer a{
     float: right;
@@ -13,6 +16,14 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 90px;
     font-style: oblique;
+}
+
+@media (max-width: 800px) {
+
+    .titleText {
+        font-size: 70px;
+    }
+    
 }
 
 
